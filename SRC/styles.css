@@ -3,9 +3,13 @@ body{
     background: #272044;
 }
 
-container{
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 2fr 2fr;
+}
+.container{
     max-width:1400px;
-    margin:0auto;
+    margin:0 auto;
 }
 
 header{
@@ -14,7 +18,7 @@ header{
     background-size: cover;
     color: white;
     text-align: center;
-    padding:260px;
+    padding:200px 0;
 }
 
 header h1{
@@ -53,6 +57,50 @@ header a{
     margin-top:32px;
     display:inline-block;
 }
+
+footer{
+    color:white;
+    background-image: linear-gradient(rgba(39,32,68,0.9), rgba(39,32,68,0.9)), url("../images/cuba-street.jpg");
+    background-repeat: no-repeat; 
+    background-size:cover;
+    padding:100px 0;
+}
+
+footer h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+footer p{
+    font-weight: 400;
+    font-size:16px;
+    line-height: 24px;
+    opacity:0.9;
+    margin-right:20px;
+}
+
+footer ul{
+    padding:0;
+}
+
+footer li{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+footer a{
+    color:white;
+    opacity:0.7;
+}
+
+section{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+
 
 @media(max-width: 900px){
 header{
